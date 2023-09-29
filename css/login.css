@@ -12,7 +12,7 @@ body {
       transparent 100%,
       rgba(0, 0, 0, 0.8)
     ),
-    url("/resourses/fields.jpg");
+    url("/resourses/images.jpeg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
