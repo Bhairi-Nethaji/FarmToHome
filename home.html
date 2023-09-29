@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/home.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <li>
+        <a class="home" href="./home.html"
+          ><i class="fa-solid fa-house-chimney"></i
+        ></a>
+      </li>
+      <li><a href="./about.html">About</a></li>
+      <li>
+        <ul class="category">
+          <li><a href="#fruit">Fruits</a></li>
+          <li><a href="#vegetable">Vegetables</a></li>
+          <li><a href="#leafy">Leafy Vegetables</a></li>
+          <li><a href="#pulse">Pulses</a></li>
+          <li><a href="#grain">Grains</a></li>
+        </ul>
+        <button id="open">
+          Category <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <button id="close">
+          Category <i class="fa-solid fa-angle-up"></i>
+        </button>
+      </li>
+      <li><a href="">Cart</a></li>
+      <li>
+        <a href="./index.html">Login</a>
+        <!-- <a class="user" href=""><i class="fa-solid fa-user-tie"></i></a> -->
+      </li>
+      <li><a href="./register.html">Register</a></li>
+    </nav>
+
+    <!-- slider imgs -->
+    <!-- <section class="slider-container">
+      <div class="slider-wrapper">
+        <div class="slider">
+          <img src="./resourses/items.jpg" alt="" id="slide-1" />
+          <img src="./resourses/bazar_3028.jpg" alt="" id="slide-1" />
+          <img src="./resourses/fruit-vegetables.webp" alt="" id="slide-1" />
+        </div>
+        <div class="slider-nav">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- items -->
+    <div class="items-container">
+      <div class="items">
+        <div class="items-list fruits" id="fruit">
+          <div class="box fruit a">
+            <img src="./resourses/fruits/mango.webp" alt="mango fruit" />
+            <h3>Mangos</h3>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <a href="">50</a>
+            </div>
+          </div>
+          <div class="box fruit b">
+            <img src="./resourses/fruits/graphes.jpeg" alt="graphes fruit" />
+            <h3>Graphs</h3>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <a href="">80</a>
+            </div>
+          </div>
+          <div class="box fruit c">
+            <img
+              src="./resourses/fruits/pomegranate.png"
+              alt="pomegranate fruit"
+            />
+            <h3>Pomegranate</h3>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <a href="">100</a>
+            </div>
+          </div>
+          <div class="box fruit d">
+            <img src="./resourses/fruits/orange.jpeg" alt="Orange fruit" />
+            <h3>Orange</h3>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <a href="">70</a>
+            </div>
+          </div>
+          <div class="box fruit e">
+            <img src="./resourses/fruits/papaya.jpeg" alt="Papaya fruit" />
+            <h3>Papaya</h3>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <a href="">40</a>
+            </div>
+          </div>
+          <div class="box fruit f">
+            <img src="./resourses/fruits/banana.jpeg" alt="Banana fruit" />
+            <h3>Banana</h3>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <a href="">50</a>
+            </div>
+          </div>
+        </div>
+        <!-- <br /> -->
+        <div class="items-list vegetables" id="vegetable">
+          <div class="box vege a">
+            <img src="./resourses/vege/pototo.jpeg" alt="potato vegetables" />
+            <h3>Potatoes</h3>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <a href="">30</a>
+            </div>
+          </div>
+          <div class="box vege b">
+            <img
+              src="./resourses/vege/ladyfinger.jpeg"
+              alt="ladyfinger vegetables"
+            />
+            <h3>Ladyfinger</h3>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <a href="">50</a>
+            </div>
+          </div>
+          <div class="box vege c">
+            <img src="./resourses/vege/brinjal.jpeg" alt="Brinjal vegetables" />
+            <h3>Brinjal</h3>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <a href="">50</a>
+            </div>
+          </div>
+          <div class="box vege d">
+            <img src="./resourses/vege/tomoto.jpeg" alt="tomoto vegetables" />
+            <h3>Tomoto</h3>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <a href="">60</a>
+            </div>
+          </div>
+          <div class="box vege e">
+            <img src="./resourses/vege/carrot.jpeg" alt="carrot vegetables" />
+            <h3>Carrot</h3>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <a href="">30</a>
+            </div>
+          </div>
+          <div class="box vege f">
+            <img
+              src="./resourses/vege/ridgegourd.jpeg"
+              alt="ridgegourd vegetables"
+            />
+            <h3>Ridgegourd</h3>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <a href="">60</a>
+            </div>
+          </div>
+        </div>
+        <!-- <br /> -->
+        <div class="items-list leafy-vegetables" id="leafy">
+          <div class="box leaf a">
+            <img src="./resourses/leaf/coriander.jpeg" alt="coriander leaves" />
+            <h3>Coriander</h3>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <a href="">10</a>
+            </div>
+          </div>
+          <div class="box leaf b">
+            <img src="./resourses/leaf/cabbage.jpeg" alt="cabbage leaves" />
+            <h3>Cabbage</h3>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <a href="">30</a>
+            </div>
+          </div>
+          <div class="box leaf c">
+            <img src="./resourses/leaf/gongura.jpeg" alt="gongura leaves" />
+            <h3>Gongura</h3>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <a href="">10</a>
+            </div>
+          </div>
+          <div class="box leaf d">
+            <img src="./resourses/leaf/totakura.jpeg" alt="totacura leaves" />
+            <h3>Totacura</h3>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <a href="">10</a>
+            </div>
+          </div>
+          <div class="box leaf e">
+            <img src="./resourses/leaf/spinach.jpeg" alt="spinach leaves" />
+            <h3>Spinach</h3>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <a href="">10</a>
+            </div>
+          </div>
+          <div class="box leaf f">
+            <img src="./resourses/leaf/curry leaves.jpeg" alt="curry leaves" />
+            <h3>Curry leaves</h3>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <a href="">10</a>
+            </div>
+          </div>
+        </div>
+        <!-- <br /> -->
+        <div class="items-list pulses" id="pulse">
+          <div class="box puls a">
+            <img src="./resourses/pulses/chickpea.jpeg" alt="chickpea" />
+            <h3>Chickpea</h3>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <a href="">10</a>
+            </div>
+          </div>
+          <div class="box puls b">
+            <img src="./resourses/pulses/blackGram.jpeg" alt="black gram" />
+            <h3>Black Gram</h3>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <a href="">10</a>
+            </div>
+          </div>
+          <div class="box puls c">
+            <img src="./resourses/pulses/greenGram.jpeg" alt="green gram" />
+            <h3>Green gram</h3>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <a href="">10</a>
+            </div>
+          </div>
+          <div class="box puls d">
+            <img src="./resourses/pulses/ragi.jpeg" alt="ragi" />
+            <h3>Ragi</h3>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <a href="">10</a>
+            </div>
+          </div>
+          <div class="box puls e">
+            <img src="./resourses/pulses/redGram.jpeg" alt="red gram" />
+            <h3>Red Gram</h3>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <a href="">10</a>
+            </div>
+          </div>
+          <div class="box puls f">
+            <img src="./resourses/pulses/horseGram.jpeg" alt="horse gram" />
+            <h3>Horse Gram</h3>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <a href="">10</a>
+            </div>
+          </div>
+        </div>
+        <!-- <br /> -->
+        <div class="items-list grains" id="grain">
+          <div class="box grain a">
+            <img src="./resourses/grains/corn.jpeg" alt="corn" />
+            <h3>Corn</h3>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <a href="">10</a>
+            </div>
+          </div>
+          <div class="box grain b">
+            <img src="./resourses/grains/wheat.jpeg" alt="wheat" />
+            <h3>Wheat</h3>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <a href="">10</a>
+            </div>
+          </div>
+          <div class="box grain c">
+            <img src="./resourses/grains/millet.jpeg" alt="millet" />
+            <h3>Millet</h3>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <a href="">10</a>
+            </div>
+          </div>
+          <div class="box grain d">
+            <img src="./resourses/grains/rice.jpeg" alt="rice" />
+            <h3>Rice</h3>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <a href="">10</a>
+            </div>
+          </div>
+          <div class="box grain e">
+            <img src="./resourses/grains/barley.jpeg" alt="barley" />
+            <h3>Barley</h3>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <a href="">10</a>
+            </div>
+          </div>
+          <div class="box grain f">
+            <img src="./resourses/grains/oats.jpeg" alt="oats" />
+            <h3>Oats</h3>
+            <div class="cart">
+              <a href="">Add to cart</a>
+              <a href="">10</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="company">
+        <h3>Company</h3>
+        <br />
+        <ul>
+          <a href="./about.html"><li>About Us</li></a>
+          <a href=""><li>Our Services</li></a>
+          <a href=""><li>Contact Us</li></a>
+          <a href=""><li>Privacy Policy</li></a>
+          <a href=""><li>Modern Slavery Policy</li></a>
+        </ul>
+      </div>
+      <div class="address">
+        <ul>
+          <li class="li"><i class="fa-brands fa-linkedin"></i></li>
+          <li class="company"><h3>Address</h3></li>
+          <li>
+            <p class="address-para">
+              Main road, Singupuram <br />
+              Srikakulam, AP.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="subscribe">
+        <li class="company"><h3>Subscribe to our Blog</h3></li>
+        <br />
+        <hr />
+        <br />
+        <a
+          href=""
+          class=""
+          style="
+            padding: 10px;
+            text-decoration: none;
+            color: aliceblue;
+            background-color: rgb(82, 78, 73);
+          "
+          >SUBSCRIBE</a
+        >
+      </div>
+    </footer>
+
+    <script>
+      const openBtn = document.querySelector("#open");
+      const closeBtn = document.querySelector("#close");
+      const menu = document.querySelector(".category");
+
+      //open nav menu
+      openBtn.addEventListener("click", () => {
+        menu.style.display = "block";
+        closeBtn.style.display = "block";
+        openBtn.style.display = "none";
+      });
+
+      //close nav menu
+      const closeNav = () => {
+        menu.style.display = "none";
+        closeBtn.style.display = "none";
+        openBtn.style.display = "block";
+      };
+      closeBtn.addEventListener("click", closeNav);
+
+      //close nav menu when menu items are clicked
+
+      if (window.innerWidth > 724) {
+        document.querySelectorAll(".category li a").forEach((navItem) => {
+          navItem.addEventListener("click", closeNav);
+        });
+      }
+
+      //change navbar styles on scroll
+      window.addEventListener("scroll", () => {
+        document
+          .querySelector("nav")
+          .classList.toggle("window-scroll", window.scrollY > 0);
+      });
+    </script>
+  </body>
+</html>

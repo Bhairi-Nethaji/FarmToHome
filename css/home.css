@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+body {
+  /* background-image: url("../resourses/images.jpeg"); */
+  background-color: white;
+  background-size: 100%;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  /* background-color: rgb(189, 232, 205); */
+  width: 100%;
+  padding: 15px 20px;
+  margin: 0px 5px;
+  position: fixed;
+  /* border: 1px red solid; */
+  /* border-radius: 10px; */
+  z-index: 2;
+}
+
+/* changes navbar styles on window scroll using javascript */
+.window-scroll {
+  background: rgb(37, 35, 35);
+  box-shadow: 0 1.5rem 1.5rem rgb(36, 0, 64, 0.2);
+}
+
+.window-scroll a {
+  color: white;
+}
+
+nav li a {
+  text-decoration: none;
+  /* background-color: aliceblue; */
+  color: black;
+  padding: 5px 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  font-weight: 550;
+}
+nav li a:hover {
+  color: black;
+}
+
+.category {
+  position: fixed;
+  top: 4rem;
+  height: fit-content;
+  width: 17rem;
+  flex-direction: column;
+  gap: 0;
+  z-index: 3;
+  display: none;
+  perspective: 400px;
+}
+
+.category li {
+  width: 100%;
+  height: 4rem;
+  opacity: 0;
+  animation: flipNavItem 200ms ease forwards;
+  transform-origin: top;
+  list-style-type: none;
+}
+
+.category li:nth-child(2) {
+  animation-delay: 100ms;
+}
+.category li:nth-child(3) {
+  animation-delay: 200ms;
+}
+.category li:nth-child(4) {
+  animation-delay: 300ms;
+}
+.category li:nth-child(5) {
+  animation-delay: 400ms;
+}
+
+@keyframes flipNavItem {
+  from {
+    transform: rotateX(90deg);
+  }
+
+  to {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+.category li a {
+  background: rgb(112, 124, 103);
+  box-shadow: -2rem 2rem 2rem rgb(0, 0, 0, 0.2);
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.category li a:hover {
+  background-color: rgb(240, 238, 238);
+  color: black;
+}
+
+nav li button {
+  display: inline-block;
+  margin-right: 1.4rem;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 550;
+}
+
+.home,
+.user {
+  font-size: 30px;
+}
+
+#open {
+  color: rgb(255, 255, 255);
+  background-color: rgb(56, 51, 51);
+}
+
+#close {
+  display: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(72, 60, 60);
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 85%;
+  position: relative;
+  top: 90px;
+  margin: 3px auto;
+  align-content: center;
+  /* text-align: center; */
+}
+
+.items-list {
+  /* background-color: beige; */
+  display: grid;
+  /* border: 2px blue solid; */
+  border-radius: 10px;
+  width: 95%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.box {
+  background-color: rgb(216, 228, 228);
+  color: black;
+  border-radius: 5px;
+  border: 1.5px rgb(159, 213, 185) solid;
+  height: 310px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box img {
+  margin-top: 5px;
+  width: 200px;
+  height: 185px;
+}
+
+.cart {
+  display: inline-flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.box h3 {
+  margin: 10px;
+  font-weight: 650;
+}
+
+.cart a {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 15px;
+  color: aliceblue;
+  background-color: rgb(66, 108, 110);
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart a:hover {
+  color: black;
+  background-color: rgb(9, 172, 205);
+}
+
+/* Footer Address */
+footer {
+  position: relative;
+  top: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+  background-color: rgb(74, 62, 62);
+  color: aliceblue;
+  line-height: 30px;
+  height: 240px;
+  padding: 50px 60px;
+  font-family: calibri;
+}
+
+.company h3 {
+  font-size: 25px;
+}
+.company ul {
+  list-style-type: none;
+}
+
+.company a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.company a:hover {
+  color: brown;
+}
+
+.footer li {
+  list-style-type: none;
+}
+
+.address ul {
+  list-style-type: none;
+}
+
+.li {
+  font-size: 50px;
+  padding: 20px 20px 20px 0px;
+  border-radius: 50%;
+}
+
+.li:hover {
+  color: rgb(121, 88, 88);
+}
+
+.address-para {
+  color: white;
+}
+
+.subscribe {
+  list-style-type: none;
+}

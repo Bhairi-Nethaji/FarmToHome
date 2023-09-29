@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+body {
+  /* background-image: url("../resourses/images.jpeg"); */
+  background-color: rgb(172, 188, 207);
+  background-size: 100%;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  /* background-color: rgb(189, 232, 205); */
+  width: 100%;
+  padding: 15px 20px;
+  margin: 0px 5px;
+  position: relative;
+  /* border: 1px red solid; */
+  /* border-radius: 10px; */
+  z-index: 2;
+}
+
+nav li a {
+  text-decoration: none;
+  /* background-color: aliceblue; */
+  color: black;
+  padding: 5px 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  font-weight: 550;
+}
+nav li a:hover {
+  color: black;
+}
+
+.category {
+  position: fixed;
+  top: 4rem;
+  height: fit-content;
+  width: 17rem;
+  flex-direction: column;
+  gap: 0;
+  z-index: 3;
+  display: none;
+  perspective: 400px;
+}
+
+.category li {
+  width: 100%;
+  height: 4rem;
+  opacity: 0;
+  animation: flipNavItem 200ms ease forwards;
+  transform-origin: top;
+  list-style-type: none;
+}
+
+nav li button {
+  display: inline-block;
+  margin-right: 1.4rem;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 550;
+}
+
+.home,
+.user {
+  font-size: 30px;
+}
+
+#open {
+  color: rgb(255, 255, 255);
+  background-color: rgb(56, 51, 51);
+}
+
+#close {
+  display: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(72, 60, 60);
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 20px;
+}
+
+.left {
+  padding: 30px;
+  background-color: aliceblue;
+}
+
+.left img {
+  width: 480px;
+}
+
+.right {
+  padding: 30px;
+  background-color: beige;
+  /* margin: 10px; */
+}
+
+.right h1 {
+  padding: 10px;
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: normal;
+}
+
+.right h4 {
+  padding: 10px;
+  letter-spacing: normal;
+  font-size: 25px;
+}
+
+.right p {
+  padding: 10px;
+  letter-spacing: normal;
+  line-height: normal;
+  font-size: 20px;
+}
+
+.right a {
+  text-decoration: none;
+  padding: 8px 15px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 5px;
+  color: rgb(211, 225, 225);
+  background-color: rgb(67, 101, 103);
+}
+
+.right a:hover {
+  background-color: rgb(149, 225, 200);
+  color: rgb(44, 42, 42);
+}
